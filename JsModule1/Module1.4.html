@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Sorting Hat</title>
 </head>
 <body>
 
+<script>
+  function sortingHat() {
+    //student's name
+    var studentName = prompt("Enter your name:");
+
+    // Generate a random number between 1 and 4
+    var randomValue = Math.floor(Math.random() * 4) + 1;
+
+    var house;
+    if (randomValue === 1) {
+      house = "Gryffindor";
+    } else if (randomValue === 2) {
+      house = "Slytherin";
+    } else if (randomValue === 3) {
+      house = "Hufflepuff";
+    } else if (randomValue === 4) {
+      house = "Ravenclaw";
+    } else {
+      house = "Unknown";
+    }
+
+    // Display result with console.log didnt work console.log(studentName + ", you are in " + house + ".");
+    alert(studentName + ", you are in " + house + ".");
+  }
+
+  // Calling the sortingHat function
+  sortingHat();
+</script>
+
 </body>
+</html>
+
 </html>
